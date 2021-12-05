@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<SettingsData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FxSliderPosition>
+    <x>0.0828155354</x>
+    <y>5.96046448E-08</y>
+    <z>-8.92207E-07</z>
+  </FxSliderPosition>
+  <MainSoundSliderPosition>
+    <x>0.113125533</x>
+    <y>0</y>
+    <z>-8.84756446E-07</z>
+  </MainSoundSliderPosition>
+  <FxVolume>-59</FxVolume>
+  <MainSoundVolume>-65</MainSoundVolume>
+  <LevelIndex>0</LevelIndex>
+</SettingsData>

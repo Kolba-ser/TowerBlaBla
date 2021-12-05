@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GameInfo_UI_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 934672026488912489d599512a8f9adb, type: 3}
+    - {fileID: 2800000, guid: 3c4d2a11ab6ef0a4f98bf7f5d35359e9, type: 3}
+    - {fileID: 2800000, guid: 526b7d5720d798240a996cdd0d7c49f2, type: 3}
+    - {fileID: 2800000, guid: dd3c148c034f00a41a8865718364b6ba, type: 3}
+    - {fileID: 2800000, guid: cf1462bc694c3c249831ad8ac5293aa2, type: 3}
+    - {fileID: 2800000, guid: 8dd861a6e819de241bca68a36048a6bd, type: 3}
+    - {fileID: 2800000, guid: 535a32abdf244b049aa073f5a87e84f7, type: 3}
+    - {fileID: 2800000, guid: a5849f49e42fbb04ea5545299911fe02, type: 3}
+    - {fileID: 2800000, guid: 5c79ab48da5cc7242b24a70cf8897c58, type: 3}
+    - {fileID: 2800000, guid: cdcd5b4428657964f8ccce784c43f9d2, type: 3}
+    - {fileID: 2800000, guid: c751af4c76f103a4fb84df6d77097659, type: 3}
+    - {fileID: 2800000, guid: 97caa871f92a6474d902aba5848cfba0, type: 3}
+    - {fileID: 2800000, guid: dbbf60cd0fb781e43aaac34dd180e356, type: 3}
+    - {fileID: 2800000, guid: 54af60d343d3e3b458ad7e97dd60dd04, type: 3}
+    totalSpriteSurfaceArea: 862540
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 3c4d2a11ab6ef0a4f98bf7f5d35359e9, type: 3}
+  - {fileID: 21300000, guid: 97caa871f92a6474d902aba5848cfba0, type: 3}
+  - {fileID: 21300000, guid: 934672026488912489d599512a8f9adb, type: 3}
+  - {fileID: 21300000, guid: 54af60d343d3e3b458ad7e97dd60dd04, type: 3}
+  - {fileID: 21300000, guid: cdcd5b4428657964f8ccce784c43f9d2, type: 3}
+  - {fileID: 21300000, guid: 8dd861a6e819de241bca68a36048a6bd, type: 3}
+  - {fileID: 21300000, guid: 526b7d5720d798240a996cdd0d7c49f2, type: 3}
+  - {fileID: 21300000, guid: 5c79ab48da5cc7242b24a70cf8897c58, type: 3}
+  - {fileID: 21300000, guid: a5849f49e42fbb04ea5545299911fe02, type: 3}
+  - {fileID: 21300000, guid: 535a32abdf244b049aa073f5a87e84f7, type: 3}
+  - {fileID: 21300000, guid: c751af4c76f103a4fb84df6d77097659, type: 3}
+  - {fileID: 21300000, guid: dd3c148c034f00a41a8865718364b6ba, type: 3}
+  - {fileID: 21300000, guid: cf1462bc694c3c249831ad8ac5293aa2, type: 3}
+  - {fileID: 21300000, guid: dbbf60cd0fb781e43aaac34dd180e356, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - menu
+  - x1
+  - menu-001
+  - Heart
+  - x2
+  - UI board Small  stone
+  - Pause-001
+  - x1-001
+  - x0
+  - x0-001
+  - x2-001
+  - pause
+  - UI board Medium  parchment
+  - Circle yellow
+  m_RenderDataMap: {}
+  m_Tag: GameInfo_UI_Atlas
+  m_IsVariant: 0
