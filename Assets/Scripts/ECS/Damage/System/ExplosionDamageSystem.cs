@@ -41,8 +41,6 @@ namespace ECS.Damage.System
             {
                 var transform = collider.transform;
                 ref var entity = ref transform.GetComponent<EntityReference>().Entity;
-                
-                Debug.Log(transform.name);
 
                 ref var request = ref entity.Get<GetDamageRequest>();
 

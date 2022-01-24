@@ -1,4 +1,4 @@
-﻿namespace ECS.Despawn.Request
+﻿namespace ECS.Remove.Request
 {
     internal struct DespawnRequest { }
 }

@@ -32,9 +32,10 @@ namespace ECS.UI.Menu.System
 
                 ref var menuComponent = ref _menuFilter.Get2(item);
                 ref var entity = ref _menuFilter.GetEntity(item);
-
                 ref var menu = ref menuComponent.Menu;
+
                 OpenMenu(menu);
+
                 entity.Get<WhichOpenedMenuTag>();
 
             }

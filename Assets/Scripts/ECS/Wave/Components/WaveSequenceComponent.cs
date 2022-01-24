@@ -7,7 +7,6 @@ namespace ECS.Wave.Components
     [Serializable]
     public struct WaveSequenceComponent
     {
-        public float Delay;
         public List<WaveComponent> WavesInfo;
         [HideInInspector]
         public bool IsLaunched;

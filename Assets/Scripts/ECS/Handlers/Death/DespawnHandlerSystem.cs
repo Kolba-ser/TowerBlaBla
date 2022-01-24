@@ -1,4 +1,4 @@
-﻿using ECS.Despawn.Request;
+﻿using ECS.Remove.Request;
 using ECS.Health.Component;
 using ECS.Path.Components;
 using Leopotam.Ecs;
@@ -14,9 +14,11 @@ namespace ECS.Handlers.Despawn
 
         public void Run()
         {
-            if (Checker.IsThereMoreEntitiesThanZero(_healthFilter)) HandleHealth();
+            if (Checker.IsThereMoreEntitiesThanZero(_healthFilter)) 
+                HandleHealth();
 
-            if (Checker.IsThereMoreEntitiesThanZero(_pathFilter)) HandlePath();
+            if (Checker.IsThereMoreEntitiesThanZero(_pathFilter)) 
+                HandlePath();
         }
 
         private void HandlePath()

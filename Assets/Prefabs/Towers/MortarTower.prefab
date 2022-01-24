@@ -263,6 +263,8 @@ GameObject:
   - component: {fileID: 8662854919799000553}
   - component: {fileID: 2726542372734876182}
   - component: {fileID: 1668500999}
+  - component: {fileID: -6963757034503089733}
+  - component: {fileID: 3811759136913975966}
   m_Layer: 10
   m_Name: MortarTower
   m_TagString: Untagged
@@ -297,7 +299,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 0.47838438, z: 2}
+  m_Size: {x: 2, y: 1, z: 2}
   m_Center: {x: 0, y: 0.95647615, z: 0}
 --- !u!95 &6483201686251735978
 Animator:
@@ -448,6 +450,32 @@ MonoBehaviour:
     Y: 0
     Z: 1
     Direction: {x: 0, y: 0, z: 0}
+--- !u!114 &-6963757034503089733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362490804734005418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffe89278d2bb3ee498a7086b8a2a8166, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  value:
+    Menu: {fileID: 0}
+--- !u!114 &3811759136913975966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2362490804734005418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90daa731ab31b447a30e37d1c65e32b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2655366992232073619
 GameObject:
   m_ObjectHideFlags: 0

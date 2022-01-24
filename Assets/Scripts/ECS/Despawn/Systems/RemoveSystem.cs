@@ -1,10 +1,10 @@
-﻿using ECS.Despawn.Request;
+﻿using ECS.Remove.Request;
 using ECS.Dispenser.Systems;
 using ECS.Pool.Components;
-using ECS.Tags.Components;
 using Leopotam.Ecs;
+using UnityEngine;
 
-namespace ECS.Despawn.Systems
+namespace ECS.Remove.System
 {
     public sealed class RemoveSystem : IEcsRunSystem
     {
@@ -17,6 +17,8 @@ namespace ECS.Despawn.Systems
             {
                 ref var pooledObject = ref _eventFilter.Get2(item);
                 ref var entity = ref _eventFilter.GetEntity(item);
+
+                Debug.Log(_eventFilter.Get2(item).Object.name);
 
                 _dispenser.RemoveObject(pooledObject);
                 entity.Del<DespawnRequest>();

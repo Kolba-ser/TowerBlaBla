@@ -19,7 +19,6 @@ GameObject:
   - component: {fileID: 3840443008504901803}
   - component: {fileID: 1064263905511798283}
   - component: {fileID: 1626840241831029332}
-  - component: {fileID: 5808811266253596384}
   m_Layer: 6
   m_Name: MortarProjectile
   m_TagString: Untagged
@@ -203,18 +202,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value:
     ExplosionVFX: {fileID: 100008, guid: 7075bd5fe1480184695a32611c15da57, type: 3}
---- !u!114 &5808811266253596384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8542353806405489035}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19ebfb03be9f0854586eb4861f111001, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    Object: {fileID: 8542353806405489035}
-    Type: 2

@@ -4850,7 +4850,6 @@ GameObject:
   - component: {fileID: 408738365}
   - component: {fileID: 6712186564916728279}
   - component: {fileID: 143272907457290025}
-  - component: {fileID: 2121642029697690183}
   - component: {fileID: 6198304473939961187}
   - component: {fileID: 1701313494}
   - component: {fileID: 1701313495}
@@ -4858,7 +4857,7 @@ GameObject:
   - component: {fileID: 1701313505}
   - component: {fileID: 3190713478847513351}
   - component: {fileID: 6396147572981658236}
-  - component: {fileID: 4726999093502522983}
+  - component: {fileID: -1448262840579882705}
   m_Layer: 10
   m_Name: LaserTower
   m_TagString: Untagged
@@ -4896,7 +4895,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.2, y: 2.0746722, z: 1.2}
+  m_Size: {x: 2, y: 1, z: 2}
   m_Center: {x: 0, y: 1.3610218, z: 0}
 --- !u!95 &408738364
 Animator:
@@ -4954,20 +4953,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convertMode: 0
---- !u!114 &2121642029697690183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918231801603381992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365ea3d26ed0432449c66b40b02bbf6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value:
-    EntityReference: {fileID: 6712186564916728279}
 --- !u!114 &6198304473939961187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5074,7 +5059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90daa731ab31b447a30e37d1c65e32b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4726999093502522983
+--- !u!114 &-1448262840579882705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5083,12 +5068,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 918231801603381992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19ebfb03be9f0854586eb4861f111001, type: 3}
+  m_Script: {fileID: 11500000, guid: 365ea3d26ed0432449c66b40b02bbf6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   value:
-    Object: {fileID: 918231801603381992}
-    Type: 1
+    EntityReference: {fileID: 6712186564916728279}
 --- !u!1 &3612083700255170563
 GameObject:
   m_ObjectHideFlags: 0

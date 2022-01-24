@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Scripts.ObjectsInfo;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,6 @@ namespace ECS.Pool.Components
     public struct PoolsComponent
     {
         public Transform Transform;
-        public List<PoolComponent> Pools;
+        public List<PooledObjectInfo> Pools;
     }
 }

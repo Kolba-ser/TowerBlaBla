@@ -143,6 +143,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value:
     Menu: {fileID: 0}
+--- !u!114 &3405034425924339709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4699207634699833762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4019cbf62d12f04bbf53190ea4339ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5618127988279962867
 PrefabInstance:
   m_ObjectHideFlags: 0

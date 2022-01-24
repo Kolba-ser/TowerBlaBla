@@ -1,4 +1,4 @@
-﻿using ECS.Despawn.Request;
+﻿using ECS.Remove.Request;
 using ECS.Handlers.TowerSale.Request;
 using ECS.Pool.Components;
 using ECS.Tags.Tags;
@@ -6,8 +6,6 @@ using ECS.UI.TowerSale.Event;
 using Leopotam.Ecs;
 using Scripts.ForCheck;
 using Scripts.Wallet;
-using System;
-using UnityEngine;
 
 namespace ECS.Handlers.TowerSale.System
 {
@@ -17,6 +15,7 @@ namespace ECS.Handlers.TowerSale.System
         private readonly EcsFilter<WhichOpenedMenuTag, PooledObjectComponent> _towerFilter = null;
 
         private readonly MoneySystem _moneySystem = null;
+       
         public void Run()
         {
             if (Checker.IsThereMoreEntitiesThanZero(_requestFilter))

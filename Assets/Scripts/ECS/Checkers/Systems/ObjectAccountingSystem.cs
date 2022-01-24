@@ -1,6 +1,7 @@
 ﻿using ECS.Pool.Components;
 using ECS.Pool.Types;
 using Leopotam.Ecs;
+using Scripts.ObjectsInfo;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -51,7 +52,7 @@ namespace ECS.Checkers.Systems
             return gameObject;
         }
 
-        private void SaveDataOfType(List<PoolComponent> pools)
+        private void SaveDataOfType(List<PooledObjectInfo> pools)
         {
             foreach (var pool in pools)
             {

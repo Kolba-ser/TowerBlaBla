@@ -5,12 +5,11 @@ using UnityEngine;
 
 namespace ECS.Initialization.Systems
 {
-    public sealed class InitializeMenuSystem : IEcsRunSystem
+    public sealed class MenuInitializationSystem : IEcsRunSystem
     {
-        private readonly EcsFilter<InitializeMenuRequest, MenuComponent> _menuFilter = null;
+        private readonly EcsFilter<InitializeMenuRequest, MenuComponent> _menuFilter = null;       
 
-        private readonly Canvas _menu;
-
+        private readonly Canvas _menu = null;
 
         public void Run()
         {

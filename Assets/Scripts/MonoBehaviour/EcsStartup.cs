@@ -5,7 +5,7 @@ using ECS.Spawn.Systems;
 using ECS.Health.System;
 using ECS.Damage.System;
 using ECS.Raycast.System;
-using ECS.Despawn.Systems;
+using ECS.Remove.System;
 using ECS.Checkers.Systems;
 using ECS.Movement.Systems;
 using ECS.Rotation.Systems;
@@ -75,7 +75,7 @@ namespace MonoB.Startup
 
         private void Start()
         {
-            InitializeVariables();
+            InitializeFields();
 
             _systems.ConvertScene();
 
@@ -103,13 +103,17 @@ namespace MonoB.Startup
         private void AddSystems()
         {
             _systems
+                .Add(new MouseInputSystem())
+                .Add(new RaycastSystem())
+
                 .Add(new PoolSystem())
 
                 .Add(new ObjectAccountingSystem())
                 .Add(_dispenseSystem)
 
-                .Add(new InitializeEntitySystem())
-                .Add(new InitializeMenuSystem())
+                .Add(new EntityInitializationSystem())
+                .Add(new MenuInitializationSystem())
+                .Add(new PooledObjectInitializationSystem())
 
                 .Add(new PathSystem())
                 .Add(new NavigationSystem())
@@ -130,9 +134,6 @@ namespace MonoB.Startup
                 .Add(new TargetingSystem())
                 .Add(new MovementSystem())
                 .Add(new RotationSystem())
-
-                .Add(new MouseInputSystem())
-                .Add(new RaycastSystem())
 
                 .Add(new CameraMovementSystem())
 
@@ -161,14 +162,16 @@ namespace MonoB.Startup
                 .Add(new BlockSystem())
                 .Add(new DespawnHandlerSystem())
 
-                .Add(new HealthPresentationSystem())
-                .Add(new LaunchProgressPresentationSystem())
-
                 .Add(new WaveRemovalHandlerSystem())
                 .Add(new TowerSalesHandlerSystem())
 
                 .Add(new MenuPresentationSystem())
+                .Add(new LaunchProgressPresentationSystem())
+                .Add(new HealthPresentationSystem())
+
                 .Add(new RemoveSystem())
+
+                .Add(new ColliderActivationSystem())
 
                 ;
         }
@@ -180,6 +183,7 @@ namespace MonoB.Startup
                 .Inject(_wallet)
 
                 .Inject(_towerMenu)
+
                 ;
         }
         private void AddOneFrame()
@@ -208,7 +212,7 @@ namespace MonoB.Startup
                 ;
         }
 
-        private void InitializeVariables()
+        private void InitializeFields()
         {
             _world = new EcsWorld();
             _systems = new EcsSystems(_world);

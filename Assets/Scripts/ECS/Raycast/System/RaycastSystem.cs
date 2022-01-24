@@ -33,6 +33,7 @@ namespace ECS.Raycast.System
             _entity = WorldHandler.GetWorld().NewEntity();
             _entity.Get<EntityNotEmptyComponent>();
         }
+        
         public void Run()
         {
 
@@ -75,8 +76,11 @@ namespace ECS.Raycast.System
                     continue;
 
                 var entity = entityReference.Entity;
+
                 if (entity.IsNull() == false)
+                {
                     entity.Get<HitEvent>();
+                }
             }
         }
 

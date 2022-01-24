@@ -1,4 +1,4 @@
-﻿using ECS.Despawn.Request;
+﻿using ECS.Remove.Request;
 using ECS.Handlers.EndPoint.Event;
 using ECS.Model.Components;
 using ECS.Movement.Components;

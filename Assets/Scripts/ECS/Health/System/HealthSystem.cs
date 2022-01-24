@@ -1,4 +1,4 @@
-﻿using ECS.Despawn.Request;
+﻿using ECS.Remove.Request;
 using ECS.Health.Component;
 using ECS.Tags.Components;
 using Leopotam.Ecs;

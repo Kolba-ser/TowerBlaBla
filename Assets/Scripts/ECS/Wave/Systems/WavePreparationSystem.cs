@@ -21,14 +21,13 @@ namespace ECS.Wave.Systems
                 ref var entity = ref _sequenceFilter.GetEntity(item);
                 ref var progress = ref sequence.LaunchProgress;
 
-                if (progress >= sequence.Delay)
-                {
-                    ref var initializedSequence = ref entity.Get<InitializedSequenceComponent>();
-                    initializedSequence.Waves = new Queue<WaveComponent>();
 
-                    InitializeSequence(ref sequence, ref initializedSequence);
-                    entity.Del<WaveSequenceComponent>();
-                }
+                ref var initializedSequence = ref entity.Get<InitializedSequenceComponent>();
+                initializedSequence.Waves = new Queue<WaveComponent>();
+
+                InitializeSequence(ref sequence, ref initializedSequence);
+                entity.Del<WaveSequenceComponent>();
+
 
                 progress += Time.deltaTime;
             }

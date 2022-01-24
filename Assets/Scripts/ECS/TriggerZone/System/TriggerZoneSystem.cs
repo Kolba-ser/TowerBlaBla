@@ -63,7 +63,6 @@ namespace ECS.TriggerZone.System
             targetComponent.TargetObject = null;
             targetComponent.TargetTransform = null;
             colliderSize = 0;
-            Debug.Log("ResetParameters");
         }
         private void SetParameters(ref TargetComponent targetComponent, ref Transform target, ref float colliderSize)
         {
@@ -71,7 +70,6 @@ namespace ECS.TriggerZone.System
             targetComponent.TargetTransform = target;
 
             colliderSize = target.GetComponent<SphereCollider>().radius * target.localScale.x;
-            Debug.Log("SetParameters");
         }
 
         private bool IsTargetOutOfTheZone(Vector3 zonePosition, Vector3 targetPosition, float range, float colliderSize)

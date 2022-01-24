@@ -12,7 +12,6 @@ namespace ECS.Dispenser.Systems
     {
         private readonly EcsFilter<InitializedPoolsComponent> _poolsFilter = null;
 
-
         public GameObject GetObject(PoolType type)
         {
             foreach (var item in _poolsFilter)
@@ -25,22 +24,16 @@ namespace ECS.Dispenser.Systems
 
                 ref var unusedObjects = ref pool.UnusedObjects;
 
-                var gameObject = unusedObjects.Dequeue(); 
-                   
+                var gameObject = unusedObjects.Dequeue();
+
                 var entity = gameObject.GetComponent<EntityReference>().Entity;
 
-                if (entity.IsNull() == false
-                    && entity.Has<DisabledTagComponent>()) 
-                {
-                    entity.Del<DisabledTagComponent>();
-                }
 
-                gameObject.SetActive(true);
+
+                ActivateObject(gameObject, ref entity);
                 return gameObject;
             }
-
             return null;
-
         }
 
         public void RemoveObject(PooledObjectComponent pooledObject)
@@ -54,21 +47,31 @@ namespace ECS.Dispenser.Systems
                 var gameObject = pooledObject.Object;
                 var entity = gameObject.GetComponent<EntityReference>().Entity;
 
-                if (entity.IsNull())
-                    throw new Exception("You forgot to hang up" +
-                                        " the components for the" +
-                                        $" entity reference on the {gameObject.name}");
-
-
-                entity.Get<DisabledTagComponent>();
-
                 var targetPool = pools.Find(x => x.Type == pooledObject.Type);
-                gameObject.SetActive(false);
+                Debug.Log(targetPool.Type);
+
+                DeactivateObject(gameObject, ref entity);
+
                 targetPool.UnusedObjects.Enqueue(gameObject);
             }
         }
 
+        private void ActivateObject(GameObject gameObject, ref EcsEntity entity)
+        {
+            if (entity.IsNull() == false
+                    && entity.Has<DisabledTagComponent>())
+            {
+                entity.Del<DisabledTagComponent>();
+            }
 
-        
+            gameObject.SetActive(true);
+        }
+        private void DeactivateObject(GameObject gameObject, ref EcsEntity entity)
+        {
+            gameObject.SetActive(false);
+            entity.Get<DisabledTagComponent>();
+        }
+
+
     }
 }
